@@ -3,9 +3,9 @@ def fibonacci(t):
         return t
     else:
         return fibonacci(t-1)+fibonacci(t-2)
-sayı=int(input('Sayı: '))
-if sayı > 0:
-    sonuç=fibonacci(sayı)
-    print('{} sayısının fibonaccisi={}'.format(sayı,sonuç))
+sayı=int(input('Kaçıncı elemanı? '))
+if sayı >= 0:
+    sonuç=fibonacci(sayı-1)
+    print('Fibonacci dizisinin {}. elemanı={}'.format(sayı,sonuç))
 else:
     print('Negatif sayı girdiniz.')
