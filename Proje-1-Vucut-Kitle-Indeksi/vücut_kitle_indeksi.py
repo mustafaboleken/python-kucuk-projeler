@@ -1,8 +1,14 @@
-x=input('Kütlenizi giriniz(kg): ')
-y=input('Boyunuzu giriniz(cm): ')
+def vki(x,y):
+    bki=x/((y/100)**2)
+    print('Vücut kitle indeksiniz: ',bki)
+    return bki
 
-bki=int(x)/((int(y)/100)**2)
-print('Vücut kitle indeksiniz: ',bki)
+bki=0
+
+x=float(input('Kütlenizi giriniz(kg): '))
+y=float(input('Boyunuzu giriniz(cm): '))
+
+vki(x,y)
 
 if bki<18.5:
     print('Zayıfsınız.')
