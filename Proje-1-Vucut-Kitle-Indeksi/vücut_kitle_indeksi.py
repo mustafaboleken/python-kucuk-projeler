@@ -1,9 +1,8 @@
 def vki(x,y):
+    global bki
     bki=x/((y/100)**2)
     print('Vücut kitle indeksiniz: ',bki)
     return bki
-
-bki=0
 
 x=float(input('Kütlenizi giriniz(kg): '))
 y=float(input('Boyunuzu giriniz(cm): '))
